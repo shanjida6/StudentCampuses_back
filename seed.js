@@ -15,7 +15,7 @@ const seed = async () => {
   await Student.create({
     firstName: 'Erica',
     lastName: 'Elliston',
-    email: 'ericahelliston.justin@gmail.com',
+    email: 'ericahelliston@gmail.com',
     imageUrl: '',
     gpa: 4.0,
   });
