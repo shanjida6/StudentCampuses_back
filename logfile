@@ -1,0 +1,28 @@
+2019-06-12 08:14:25.136 EDT [53267] LOG:  listening on IPv6 address "::1", port 5432
+2019-06-12 08:14:25.136 EDT [53267] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-06-12 08:14:25.288 EDT [53267] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-06-12 08:14:25.450 EDT [53269] LOG:  database system was shut down at 2019-06-12 08:13:13 EDT
+2019-06-12 08:14:25.483 EDT [53267] LOG:  database system is ready to accept connections
+2019-06-12 08:14:51.952 EDT [53290] FATAL:  database "postgis_test" does not exist
+2019-06-12 12:41:49.112 EDT [67736] ERROR:  role "postgres" does not exist
+2019-06-12 12:41:49.112 EDT [67736] STATEMENT:  ALTER USER postgres PASSWORD 'md582bd3c6787e989518e060879f67aba2d'
+2019-06-12 12:42:59.997 EDT [67736] ERROR:  role "shanjida" does not exist
+2019-06-12 12:42:59.997 EDT [67736] STATEMENT:  ALTER USER shanjida PASSWORD 'md59bda88c9832818fa30a0cd61ec3b4f46'
+2019-06-12 13:06:00.239 EDT [68377] FATAL:  database "Campus-Manager" does not exist
+2019-06-12 13:06:09.513 EDT [68378] FATAL:  database "Campus-Manager" does not exist
+2019-06-12 13:06:10.590 EDT [68379] FATAL:  database "Campus-Manager" does not exist
+2019-06-12 13:06:11.425 EDT [68380] FATAL:  database "Campus-Manager" does not exist
+2019-06-12 13:07:51.901 EDT [68383] FATAL:  database "Campus-Manager" does not exist
+2019-06-12 13:08:31.139 EDT [68384] FATAL:  database "campus-manager" does not exist
+2019-06-12 14:09:40.620 EDT [68403] ERROR:  type "string" does not exist at character 63
+2019-06-12 14:09:40.620 EDT [68403] STATEMENT:  CREATE TABLE "public"."campus" (
+	    "id" integer,
+	    "name" string ,
+	    "address" string ,
+	    "description" string ,
+	    "imageUrl" string ,
+	    "createdAt" date,
+	    "updateAt" date,
+	    PRIMARY KEY ("id")
+	);
+	
