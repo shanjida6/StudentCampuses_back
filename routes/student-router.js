@@ -4,6 +4,7 @@
 module.exports = (app, db) => {
   // get all students 
   app.get('/student', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
     db.student.findAll()
       .then(students => {
         res.json(students);

@@ -3,6 +3,7 @@
 module.exports = (app, db) => {
   // get all campuses
   app.get('/campus', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     db.campus.findAll()
       .then(campus => {
         res.json(campus);

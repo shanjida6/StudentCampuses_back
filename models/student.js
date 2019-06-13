@@ -5,11 +5,11 @@
 module.exports = (sequelize, DataTypes) => {
   const Student = sequelize.define('student', {
       //sequalize handles id, updated_at and deleted_at 
-    student_first_name: {
+    firstName: {
       type: DataTypes.STRING,
       required: true
     },
-    student_last_name: {
+    lastName: {
         type: DataTypes.STRING,
         required: true
     },
