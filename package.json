@@ -1,0 +1,22 @@
+{
+  "name": "studentcampuses_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanjida6/StudentCampuses_back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanjida6/StudentCampuses_back/issues"
+  },
+  "homepage": "https://github.com/shanjida6/StudentCampuses_back#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
