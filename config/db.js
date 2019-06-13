@@ -10,7 +10,7 @@ const Sequelize = require('sequelize');
 //const db = {};
 
 // This is our entry point, we instantiate the Sequelize instance accordingly;
-const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost:5432/Campus-Manager', { });
+const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost:5432/Campus-Manager', {operatorsAliases: false });
 
 const db= {}; 
 db.Sequelize = Sequelize;
@@ -19,6 +19,8 @@ db.sequelize = sequelize;
 //Models/tables
 db.campus = require('../models/campus.js')(sequelize, Sequelize);
 db.student = require('../models/student.js')(sequelize, Sequelize);
+
+console.log(db.student); 
 
 //belongsTo declares how the tables are connected 
 //belongsTo lets student belong to one campus_id 

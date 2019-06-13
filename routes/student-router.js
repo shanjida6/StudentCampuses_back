@@ -4,7 +4,7 @@
 module.exports = (app, db) => {
   // get all students 
   app.get('/student', (req, res) => {
-    db.students.findAll()
+    db.student.findAll()
       .then(students => {
         res.json(students);
       });
@@ -41,7 +41,7 @@ module.exports = (app, db) => {
   app.patch('/student/:id', (req, res) => {
     const id = req.params.id;
     const updates = req.body.updates;
-    db.students.find({
+    db.student.find({
       where: { id: id }
     })
       .then(student => {
