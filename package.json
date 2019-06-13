@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/shanjida6/StudentCampuses_back#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "config.json": "0.0.4",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.5.0",
+    "sequelize-version": "0.0.58"
   }
 }

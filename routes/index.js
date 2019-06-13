@@ -1,8 +1,8 @@
 'use strict'
 
 const routes = [
-  require('./routes/campus'),
-  require('./routes/students')
+  require('./campus-router'),
+  require('./student-router')
 ];
 
 
