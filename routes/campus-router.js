@@ -25,10 +25,15 @@ module.exports = (app, db) => {
   app.post('/campus', (req, res) => {
     console.log('this is a single campus', req.body)
     const name = req.body.name;
-    const campus_id = req.body.campus_id;
+    const address = req.body.address;
+    const description = req.body.description;
     const type = req.body.type;
+    const imageUrl = req.body.imageUrl;
     db.campus.create({
-      campus_id: campus_id,
+      name : name,
+      address: address,
+      description: description,
+      imageUrl : imageUrl,
       type: type
     })
       .then(newCampus => {

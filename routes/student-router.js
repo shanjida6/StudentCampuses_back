@@ -4,7 +4,7 @@
 module.exports = (app, db) => {
   // get all students 
   app.get('/student', (req, res) => {
-    /*res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')*/
+    /*res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')*/0
     db.student.findAll()
       .then(students => {
         res.json(students);
@@ -25,15 +25,22 @@ module.exports = (app, db) => {
   // adding single student 
   app.post('/student', (req, res) => {
     console.log('single student here', req.body)
-    const name = req.body.name;
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    const gpa= req.body.gpa;
     const campus_id = req.body.campus_id;
     const type = req.body.type;
     db.student.create({
-      student_name: name,
-      campus_id: campus_id,
+      firstName: firstName,
+      lastName : lastName,
+      email : email,
+      gpa: gpa,
+      campus_id: campus_id ,
       type: type
     })
       .then(newStudent => {
+        console.log(newStudent);
       res.json(newStudent);
     });
   });
