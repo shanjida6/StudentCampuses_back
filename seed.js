@@ -1,29 +1,37 @@
 const  db = require('./config/db');
 //const { green, red } = require('chalk');
 
+
+
 const seed = async () => {
   await db.sequelize.sync({force:true});
-  // seed your database here!
   await db.student.create({
-    firstName: 'Shanjida',
-    lastName: 'Akhter',
-    email: 'shanjida.a@gmail.com',
-    imageUrl: '',
+    firstName: 'Rose',
+    lastName: 'Baker',
+    email: 'Rose.b@gmail.com',
+    imageUrl: 'https://i.ibb.co/WswKdsx/48-B9-E6-DC-91-D4-4-E9-D-A507-E6-C1296-AB686.jpg',
     gpa: 4.0,
   });
   await db.student.create({
-    firstName: 'Erica',
-    lastName: 'Elliston',
-    email: 'ericahelliston@gmail.com',
-    imageUrl: '',
+    firstName: 'Sarah',
+    lastName: 'Williams',
+    email: 'SarahWilliams@gmail.com',
+    imageUrl: 'https://i.ibb.co/9VVgRRg/Sarah.png',
     gpa: 4.0,
   });
   await db.student.create({
     firstName: 'Josh',
-    lastName: 'Hutcherson',
-    email: 'Joshhutcherson@gmail.com',
-    imageUrl: '',
+    lastName: 'Ortiz',
+    email: 'Joshortiz@gmail.com',
+    imageUrl: 'https://i.ibb.co/gdg2kWH/B634-B90-A-F219-40-BB-A2-EC-42-F41870269-B.jpg',
     gpa: 4.0,
+  });
+  await db.student.create({
+    firstName: 'Ali',
+    lastName: 'Khan',
+    email: 'AliKhan@gmail.com',
+    imageUrl: 'https://i.ibb.co/RbM5mnW/handsome-635832-1280.jpg',
+    gpa: 3.7,
   });
 
   await db.campus.create({
@@ -31,7 +39,7 @@ const seed = async () => {
     imgUrl: '',
     address: '695 Park Ave, New York, NY 10065',
     description:
-      'Hunter College is a cuny college. Originally it was an all girls college back in the 80s.',
+      'Hunter College is one of the constituent colleges of the City University of New York, an American public university. It is located in the Lenox Hill neighborhood of the Upper East Side of Manhattan, New York City. The college offers studies in more than one hundred undergraduate and postgraduate fields across five schools. It also administers Hunter College High School and Hunter College Elementary School.',
   });
 
   await db.campus.create({

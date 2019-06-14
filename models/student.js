@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         required: true
     },
     gpa: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DOUBLE,
         required: true
     }})
   return Student;
