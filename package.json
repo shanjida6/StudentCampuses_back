@@ -18,7 +18,7 @@
   "homepage": "https://github.com/shanjida6/StudentCampuses_back#readme",
   "dependencies": {
     "config.json": "0.0.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "pg": "^7.11.0",
